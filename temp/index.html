@@ -1,0 +1,54 @@
+﻿<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-signin-client_id" content="931683937870-lkk6mn3d3a7e6mh83vuaan5vjnv5896t.apps.googleusercontent.com">
+
+    <title> Weather Web App </title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="StyleSheet1.css">
+    
+    <script src="Login.js"></script>
+    <script src="https://apis.google.com/js/platform.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="JavaScript.js"></script>
+</head>
+    <h1 class="welcome"> Welcome to the 
+        Weather App</h1>
+<body>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+    <div class ="split left">
+
+    </div>
+
+    <div class ="split right">
+        
+        <div class="location">
+            <h1 class="location-timezone"> Time Zone</h1>
+            
+        </div>
+        <canvas class="icon" width="100" height="100" ></canvas>
+        <div class="description"> Its cold </div>
+
+        <div class="temperature">
+            <div class="degree-section">
+                <h2 class="temperature-degree"> 34 </h2>
+                <span> F </span>
+            </div>
+            <div class="humid-section">
+                <h2 class="humidity-degree"> hello </h2>
+                <span> % </span>
+            </div>
+        </div>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <div class="data">
+            <button onclick="signOut()" class="btn btn-danger"> SignOut </button>
+        </div>
+    </div>
+
+    <script src="skycons.js"></script>
+    <script src="JavaScript.js"></script>
+</body>
+</html>
